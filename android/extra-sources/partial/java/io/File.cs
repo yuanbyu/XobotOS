@@ -115,7 +115,7 @@ namespace java.io
 		/// <code>false</code>
 		/// otherwise.
 		/// </returns>
-		public virtual bool exists ()
+		public bool exists ()
 		{
 			return info.Exists;
 		}
@@ -134,7 +134,7 @@ namespace java.io
 		/// otherwise.
 		/// </returns>
 		/// <since>1.6</since>
-		public virtual bool canExecute ()
+		public bool canExecute ()
 		{
 			return info.Exists;
 		}
@@ -150,7 +150,7 @@ namespace java.io
 		/// <code>false</code>
 		/// otherwise.
 		/// </returns>
-		public virtual bool canRead ()
+		public bool canRead ()
 		{
 			return info.Exists;
 		}
@@ -164,7 +164,7 @@ namespace java.io
 		/// <code>false</code>
 		/// otherwise.
 		/// </returns>
-		public virtual bool canWrite ()
+		public bool canWrite ()
 		{
 			return info.Exists && !info.IsReadOnly;
 		}
@@ -184,7 +184,7 @@ namespace java.io
 		/// <code>false</code>
 		/// otherwise.
 		/// </returns>
-		public virtual bool delete ()
+		public bool delete ()
 		{
 			try {
 				info.Delete ();
@@ -205,7 +205,7 @@ namespace java.io
 		/// command-line arguments, to remove the requirement implied by relative paths, that the
 		/// child must have the same working directory as its parent.
 		/// </remarks>
-		public virtual string getAbsolutePath ()
+		public string getAbsolutePath ()
 		{
 			if (isAbsolute ()) {
 				return path;
@@ -229,7 +229,7 @@ namespace java.io
 		/// <code>false</code>
 		/// otherwise.
 		/// </returns>
-		public virtual bool isDirectory ()
+		public bool isDirectory ()
 		{
 			return (info.Attributes & FileAttributes.Directory) != 0;
 		}
@@ -249,7 +249,7 @@ namespace java.io
 		/// <code>false</code>
 		/// otherwise.
 		/// </returns>
-		public virtual bool isFile ()
+		public bool isFile ()
 		{
 			return (info.Attributes & FileAttributes.Normal) != 0;
 		}
@@ -264,7 +264,7 @@ namespace java.io
 		/// Returns 0 if the file does not exist.
 		/// </remarks>
 		/// <returns>the time when this file was last modified.</returns>
-		public virtual long lastModified ()
+		public long lastModified ()
 		{
 			return info.LastWriteTime.Ticks;
 		}
@@ -277,7 +277,7 @@ namespace java.io
 		/// The result for a directory is not defined.
 		/// </remarks>
 		/// <returns>the number of bytes in this file.</returns>
-		public virtual long length ()
+		public long length ()
 		{
 			return info.Exists ? info.Length : 0;
 		}

@@ -1,7 +1,6 @@
 /bin/
 /obj/
 /.settings/
-/output/
 /logfile.txt
 /thestubs.dll
 /*.userprefs
