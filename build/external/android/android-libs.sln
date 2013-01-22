@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(android)", "..\..\..\android", "{FE6188D0-02E5-D6C1-D3B1-995EAA9A9F6F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "android_libs", "android_libs.vcxproj", "{7972656D-44CD-BD14-2BB3-C8D1C77CF901}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icu4c", "..\icu4c\icu4c.vcxproj", "{B4E57D04-0036-3521-3CA2-5364EE4AB534}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug-x86|Win32 = Debug-x86|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7972656D-44CD-BD14-2BB3-C8D1C77CF901}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7972656D-44CD-BD14-2BB3-C8D1C77CF901}.Debug|Win32.Build.0 = Debug|Win32
+		{7972656D-44CD-BD14-2BB3-C8D1C77CF901}.Debug-x86|Win32.ActiveCfg = Debug-x86|Win32
+		{7972656D-44CD-BD14-2BB3-C8D1C77CF901}.Debug-x86|Win32.Build.0 = Debug-x86|Win32
+		{7972656D-44CD-BD14-2BB3-C8D1C77CF901}.Release|Win32.ActiveCfg = Release|Win32
+		{7972656D-44CD-BD14-2BB3-C8D1C77CF901}.Release|Win32.Build.0 = Release|Win32
+		{B4E57D04-0036-3521-3CA2-5364EE4AB534}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B4E57D04-0036-3521-3CA2-5364EE4AB534}.Debug|Win32.Build.0 = Debug|Win32
+		{B4E57D04-0036-3521-3CA2-5364EE4AB534}.Debug-x86|Win32.ActiveCfg = Debug-x86|Win32
+		{B4E57D04-0036-3521-3CA2-5364EE4AB534}.Debug-x86|Win32.Build.0 = Debug-x86|Win32
+		{B4E57D04-0036-3521-3CA2-5364EE4AB534}.Release|Win32.ActiveCfg = Release|Win32
+		{B4E57D04-0036-3521-3CA2-5364EE4AB534}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7972656D-44CD-BD14-2BB3-C8D1C77CF901} = {FE6188D0-02E5-D6C1-D3B1-995EAA9A9F6F}
+	EndGlobalSection
+EndGlobal

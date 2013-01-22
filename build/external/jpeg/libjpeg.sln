@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "android_libjpeg", "android_libjpeg.vcxproj", "{334C3FD6-C611-4D9E-291B-140E47BDF5AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug-x86|Win32 = Debug-x86|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{334C3FD6-C611-4D9E-291B-140E47BDF5AB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{334C3FD6-C611-4D9E-291B-140E47BDF5AB}.Debug|Win32.Build.0 = Debug|Win32
+		{334C3FD6-C611-4D9E-291B-140E47BDF5AB}.Debug-x86|Win32.ActiveCfg = Debug-x86|Win32
+		{334C3FD6-C611-4D9E-291B-140E47BDF5AB}.Debug-x86|Win32.Build.0 = Debug-x86|Win32
+		{334C3FD6-C611-4D9E-291B-140E47BDF5AB}.Release|Win32.ActiveCfg = Release|Win32
+		{334C3FD6-C611-4D9E-291B-140E47BDF5AB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

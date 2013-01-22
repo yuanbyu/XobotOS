@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "animator", "animator.vcxproj", "{1401D73D-4329-EB1D-39EE-78DE500444E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug-x86|Win32 = Debug-x86|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1401D73D-4329-EB1D-39EE-78DE500444E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1401D73D-4329-EB1D-39EE-78DE500444E8}.Debug|Win32.Build.0 = Debug|Win32
+		{1401D73D-4329-EB1D-39EE-78DE500444E8}.Debug-x86|Win32.ActiveCfg = Debug-x86|Win32
+		{1401D73D-4329-EB1D-39EE-78DE500444E8}.Debug-x86|Win32.Build.0 = Debug-x86|Win32
+		{1401D73D-4329-EB1D-39EE-78DE500444E8}.Release|Win32.ActiveCfg = Release|Win32
+		{1401D73D-4329-EB1D-39EE-78DE500444E8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
