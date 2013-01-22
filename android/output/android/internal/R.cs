@@ -13995,10 +13995,10 @@ namespace android.@internal
 			/// <tr><td><code>inherit</code></td><td>0</td><td> Default </td></tr>
 			/// <tr><td><code>firstStrong</code></td><td>1</td><td> Default for the root view. The first strong directional character determines the
 			/// paragraph direction.  If there is no strong directional character, the paragraph
-			/// direction is the view’s resolved layout direction. </td></tr>
+			/// direction is the viewâ€™s resolved layout direction. </td></tr>
 			/// <tr><td><code>anyRtl</code></td><td>2</td><td> The paragraph direction is RTL if it contains any strong RTL character, otherwise
 			/// it is LTR if it contains any strong LTR characters.  If there are neither, the
-			/// paragraph direction is the view’s resolved layout direction. </td></tr>
+			/// paragraph direction is the viewâ€™s resolved layout direction. </td></tr>
 			/// <tr><td><code>charCount</code></td><td>3</td><td> The paragraph direction is the same as the one held by a 60% majority of the
 			/// characters. If there is no majority then the paragraph direction is the resolved
 			/// layout direction of the View. </td></tr>
@@ -66810,10 +66810,10 @@ namespace android.@internal
 			/// <tr><td><code>inherit</code></td><td>0</td><td> Default </td></tr>
 			/// <tr><td><code>firstStrong</code></td><td>1</td><td> Default for the root view. The first strong directional character determines the
 			/// paragraph direction.  If there is no strong directional character, the paragraph
-			/// direction is the view’s resolved layout direction. </td></tr>
+			/// direction is the viewâ€™s resolved layout direction. </td></tr>
 			/// <tr><td><code>anyRtl</code></td><td>2</td><td> The paragraph direction is RTL if it contains any strong RTL character, otherwise
 			/// it is LTR if it contains any strong LTR characters.  If there are neither, the
-			/// paragraph direction is the view’s resolved layout direction. </td></tr>
+			/// paragraph direction is the viewâ€™s resolved layout direction. </td></tr>
 			/// <tr><td><code>charCount</code></td><td>3</td><td> The paragraph direction is the same as the one held by a 60% majority of the
 			/// characters. If there is no majority then the paragraph direction is the resolved
 			/// layout direction of the View. </td></tr>

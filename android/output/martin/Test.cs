@@ -627,133 +627,6 @@ namespace martin
 			java.util.Arrays.sort(a);
 		}
 
-		[Sharpen.MarshalHelper(@"NativeArray<MartinTest::Foo>")]
-		internal static class Array_Foo_Helper
-		{
-			[StructLayout(LayoutKind.Sequential)]
-			private struct Array_Foo_Struct
-			{
-				public uint _owner;
-
-				public int length;
-
-				public System.IntPtr ptr;
-			}
-
-			internal static int NativeSize
-			{
-				get
-				{
-					return Marshal.SizeOf(typeof(Array_Foo_Struct));
-				}
-			}
-
-			public static void MarshalIn(System.IntPtr ptr, martin.Test.Foo[] arg)
-			{
-				Array_Foo_Struct obj = new Array_Foo_Struct();
-				obj._owner = 0x972f3813;
-				obj.length = arg.Length;
-				{
-					obj.ptr = ptr + Array_Foo_Helper.NativeSize;
-					System.IntPtr addr = obj.ptr;
-					for (int i = 0; i < arg.Length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
-					{
-						martin.Test.Foo.Foo_Helper.MarshalIn(addr, arg[i]);
-					}
-				}
-				Marshal.StructureToPtr(obj, ptr, false);
-			}
-
-			public static void MarshalOut(System.IntPtr ptr, martin.Test.Foo[] arg)
-			{
-				Array_Foo_Struct obj = (Array_Foo_Struct)Marshal.PtrToStructure(ptr, typeof(Array_Foo_Struct
-					));
-				if (obj.length != arg.Length)
-				{
-					throw new System.InvalidOperationException();
-				}
-				{
-					System.IntPtr addr = obj.ptr;
-					for (int i = 0; i < obj.length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
-					{
-						martin.Test.Foo.Foo_Helper.MarshalOut(addr, arg[i]);
-					}
-				}
-			}
-
-			public static System.IntPtr ManagedToNative(martin.Test.Foo[] arg)
-			{
-				if (arg == null)
-				{
-					return System.IntPtr.Zero;
-				}
-				System.IntPtr ptr = Marshal.AllocHGlobal(Array_Foo_Helper.NativeSize + martin.Test.Foo
-					.Foo_Helper.NativeSize * arg.Length);
-				Array_Foo_Helper.MarshalIn(ptr, arg);
-				return ptr;
-			}
-
-			public static martin.Test.Foo[] NativeToManaged(System.IntPtr ptr)
-			{
-				if (ptr == System.IntPtr.Zero)
-				{
-					return null;
-				}
-				Array_Foo_Struct obj = (Array_Foo_Struct)Marshal.PtrToStructure(ptr, typeof(Array_Foo_Struct
-					));
-				martin.Test.Foo[] arg = new martin.Test.Foo[obj.length];
-				if (obj.length != arg.Length)
-				{
-					throw new System.InvalidOperationException();
-				}
-				{
-					System.IntPtr addr = obj.ptr;
-					for (int i = 0; i < obj.length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
-					{
-						arg[i] = martin.Test.Foo.Foo_Helper.NativeToManaged(addr);
-					}
-				}
-				return arg;
-			}
-
-			public static void FreeNativePtr(System.IntPtr ptr)
-			{
-				libxobotos_martin_Test_Array_Foo_destructor(ptr);
-			}
-
-			[DllImport("libxobotos.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.
-				Unicode)]
-			private static extern void libxobotos_martin_Test_Array_Foo_destructor(System.IntPtr
-				 ptr);
-
-			public static void FreeManagedPtr_inner(System.IntPtr ptr)
-			{
-				Array_Foo_Struct obj = (Array_Foo_Struct)Marshal.PtrToStructure(ptr, typeof(Array_Foo_Struct
-					));
-				if (obj._owner != 0x972f3813)
-				{
-					throw new System.InvalidOperationException();
-				}
-				{
-					System.IntPtr addr = obj.ptr;
-					for (int i = 0; i < obj.length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
-					{
-						martin.Test.Foo.Foo_Helper.FreeManagedPtr_inner(addr);
-					}
-				}
-			}
-
-			public static void FreeManagedPtr(System.IntPtr ptr)
-			{
-				if (ptr == System.IntPtr.Zero)
-				{
-					return;
-				}
-				Array_Foo_Helper.FreeManagedPtr_inner(ptr);
-				Marshal.FreeHGlobal(ptr);
-			}
-		}
-
 		[Sharpen.MarshalHelper(@"NativePtrArray<NativeString>")]
 		internal static class Array_String_Helper
 		{
@@ -881,6 +754,133 @@ namespace martin
 					return;
 				}
 				Array_String_Helper.FreeManagedPtr_inner(ptr);
+				Marshal.FreeHGlobal(ptr);
+			}
+		}
+
+		[Sharpen.MarshalHelper(@"NativeArray<MartinTest::Foo>")]
+		internal static class Array_Foo_Helper
+		{
+			[StructLayout(LayoutKind.Sequential)]
+			private struct Array_Foo_Struct
+			{
+				public uint _owner;
+
+				public int length;
+
+				public System.IntPtr ptr;
+			}
+
+			internal static int NativeSize
+			{
+				get
+				{
+					return Marshal.SizeOf(typeof(Array_Foo_Struct));
+				}
+			}
+
+			public static void MarshalIn(System.IntPtr ptr, martin.Test.Foo[] arg)
+			{
+				Array_Foo_Struct obj = new Array_Foo_Struct();
+				obj._owner = 0x972f3813;
+				obj.length = arg.Length;
+				{
+					obj.ptr = ptr + Array_Foo_Helper.NativeSize;
+					System.IntPtr addr = obj.ptr;
+					for (int i = 0; i < arg.Length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
+					{
+						martin.Test.Foo.Foo_Helper.MarshalIn(addr, arg[i]);
+					}
+				}
+				Marshal.StructureToPtr(obj, ptr, false);
+			}
+
+			public static void MarshalOut(System.IntPtr ptr, martin.Test.Foo[] arg)
+			{
+				Array_Foo_Struct obj = (Array_Foo_Struct)Marshal.PtrToStructure(ptr, typeof(Array_Foo_Struct
+					));
+				if (obj.length != arg.Length)
+				{
+					throw new System.InvalidOperationException();
+				}
+				{
+					System.IntPtr addr = obj.ptr;
+					for (int i = 0; i < obj.length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
+					{
+						martin.Test.Foo.Foo_Helper.MarshalOut(addr, arg[i]);
+					}
+				}
+			}
+
+			public static System.IntPtr ManagedToNative(martin.Test.Foo[] arg)
+			{
+				if (arg == null)
+				{
+					return System.IntPtr.Zero;
+				}
+				System.IntPtr ptr = Marshal.AllocHGlobal(Array_Foo_Helper.NativeSize + martin.Test.Foo
+					.Foo_Helper.NativeSize * arg.Length);
+				Array_Foo_Helper.MarshalIn(ptr, arg);
+				return ptr;
+			}
+
+			public static martin.Test.Foo[] NativeToManaged(System.IntPtr ptr)
+			{
+				if (ptr == System.IntPtr.Zero)
+				{
+					return null;
+				}
+				Array_Foo_Struct obj = (Array_Foo_Struct)Marshal.PtrToStructure(ptr, typeof(Array_Foo_Struct
+					));
+				martin.Test.Foo[] arg = new martin.Test.Foo[obj.length];
+				if (obj.length != arg.Length)
+				{
+					throw new System.InvalidOperationException();
+				}
+				{
+					System.IntPtr addr = obj.ptr;
+					for (int i = 0; i < obj.length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
+					{
+						arg[i] = martin.Test.Foo.Foo_Helper.NativeToManaged(addr);
+					}
+				}
+				return arg;
+			}
+
+			public static void FreeNativePtr(System.IntPtr ptr)
+			{
+				libxobotos_martin_Test_Array_Foo_destructor(ptr);
+			}
+
+			[DllImport("libxobotos.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.
+				Unicode)]
+			private static extern void libxobotos_martin_Test_Array_Foo_destructor(System.IntPtr
+				 ptr);
+
+			public static void FreeManagedPtr_inner(System.IntPtr ptr)
+			{
+				Array_Foo_Struct obj = (Array_Foo_Struct)Marshal.PtrToStructure(ptr, typeof(Array_Foo_Struct
+					));
+				if (obj._owner != 0x972f3813)
+				{
+					throw new System.InvalidOperationException();
+				}
+				{
+					System.IntPtr addr = obj.ptr;
+					for (int i = 0; i < obj.length; i++, addr += martin.Test.Foo.Foo_Helper.NativeSize)
+					{
+						martin.Test.Foo.Foo_Helper.FreeManagedPtr_inner(addr);
+					}
+				}
+			}
+
+			public static void FreeManagedPtr(System.IntPtr ptr)
+			{
+				if (ptr == System.IntPtr.Zero)
+				{
+					return;
+				}
+				Array_Foo_Helper.FreeManagedPtr_inner(ptr);
 				Marshal.FreeHGlobal(ptr);
 			}
 		}

@@ -609,9 +609,7 @@ namespace android.view
 
 		/// <summary>
 		/// Flag for
-		/// <see cref="addIntentOptions(int, int, int, android.content.ComponentName, android.content.Intent[], android.content.Intent, int, MenuItem[])
-		/// 	">addIntentOptions(int, int, int, android.content.ComponentName, android.content.Intent[], android.content.Intent, int, MenuItem[])
-		/// 	</see>
+		/// <see cref="#addIntentOptions">#addIntentOptions</see>
 		/// : if set, do not automatically remove
 		/// any existing menu items in the same group.
 		/// </summary>
