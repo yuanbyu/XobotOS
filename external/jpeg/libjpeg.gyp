@@ -76,6 +76,9 @@
         [ 'skia_os in ["linux", "freebsd", "openbsd", "solaris", "android"]', {
           'cflags': [ '-fPIC', '-fvisibility=hidden' ]
         }],
+        [ 'skia_os == "win"', {
+          'cflags': [ '/TP' ]
+        }],
       ],
   }]
 }

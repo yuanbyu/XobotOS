@@ -19,7 +19,17 @@
 	  'defines': [
 	    '_REENTRANT',
 	    'U_COMMON_IMPLEMENTATION'
-         ],
+          ],
+          'sources': [
+          ],
+        }],
+        [ 'skia_os == "win"', {
+          'cflags': [
+	  ],
+	  'defines': [
+	    '_REENTRANT',
+	    'U_COMMON_IMPLEMENTATION'
+          ],
           'sources': [
           ],
         }],

@@ -1,1 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?><Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><ItemGroup Label="ProjectConfigurations"><ProjectConfiguration Include="Debug|Win32"><Configuration>Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration><ProjectConfiguration Include="Debug-x86|Win32"><Configuration>Debug-x86</Configuration><Platform>Win32</Platform></ProjectConfiguration><ProjectConfiguration Include="Release|Win32"><Configuration>Release</Configuration><Platform>Win32</Platform></ProjectConfiguration></ItemGroup><PropertyGroup Label="Globals"><ProjectGuid>{334C3FD6-C611-4D9E-291B-140E47BDF5AB}</ProjectGuid><Keyword>Win32Proj</Keyword><RootNamespace>android_libjpeg</RootNamespace><TargetName>$(ProjectName)</TargetName></PropertyGroup><Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/><PropertyGroup Label="Configuration"><ConfigurationType>StaticLibrary</ConfigurationType></PropertyGroup><Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/><ImportGroup Label="ExtensionSettings"/><ImportGroup Label="PropertySheets"><Import Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/></ImportGroup><PropertyGroup Label="UserMacros"/><PropertyGroup><ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\..\..\external\jpeg\bin\;$(MSBuildProjectDirectory)\..\..\..\external\jpeg\bin\</ExecutablePath><IntDir>$(Configuration)\obj\$(ProjectName)\</IntDir><LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</LinkIncremental><OutDir>$(SolutionDir)$(Configuration)\</OutDir></PropertyGroup><ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;"><ClCompile><AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions><DebugInformationFormat>EditAndContinue</DebugInformationFormat><ExceptionHandling>false</ExceptionHandling><Optimization>Disabled</Optimization><PreprocessorDefinitions>_DEBUG;SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions><ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName><RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary><RuntimeTypeInfo>false</RuntimeTypeInfo><TreatWarningAsError>false</TreatWarningAsError><WarningLevel>Level3</WarningLevel></ClCompile><Lib><OutputFile>$(OutDir)lib\$(ProjectName).lib</OutputFile></Lib><Link><AdditionalDependencies>OpenGL32.lib;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies><GenerateDebugInformation>true</GenerateDebugInformation></Link><ResourceCompile><PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions></ResourceCompile></ItemDefinitionGroup><ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug-x86|Win32&apos;"><ClCompile><AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions><DebugInformationFormat>ProgramDatabase</DebugInformationFormat><PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions><TreatWarningAsError>false</TreatWarningAsError><WarningLevel>Level1</WarningLevel></ClCompile><Lib><OutputFile>$(OutDir)lib\$(ProjectName).lib</OutputFile></Lib><Link><AdditionalDependencies>OpenGL32.lib;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies></Link><ResourceCompile><PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions></ResourceCompile></ItemDefinitionGroup><ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;"><ClCompile><AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions><DebugInformationFormat>ProgramDatabase</DebugInformationFormat><ExceptionHandling>false</ExceptionHandling><FavorSizeOrSpeed>Speed</FavorSizeOrSpeed><Optimization>Full</Optimization><PreprocessorDefinitions>NDEBUG;SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_RELEASE;GR_RELEASE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions><ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName><RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary><RuntimeTypeInfo>false</RuntimeTypeInfo><TreatWarningAsError>false</TreatWarningAsError><WarningLevel>Level3</WarningLevel><WholeProgramOptimization>true</WholeProgramOptimization></ClCompile><Lib><LinkTimeCodeGeneration>true</LinkTimeCodeGeneration><OutputFile>$(OutDir)lib\$(ProjectName).lib</OutputFile></Lib><Link><AdditionalDependencies>OpenGL32.lib;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies><GenerateDebugInformation>true</GenerateDebugInformation><LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration></Link><ResourceCompile><PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_RELEASE;GR_RELEASE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions></ResourceCompile></ItemDefinitionGroup><ItemGroup><None Include="..\..\..\external\jpeg\libjpeg.gyp"/></ItemGroup><ItemGroup><ClInclude Include="..\..\..\external\jpeg\jerror.h"/><ClInclude Include="..\..\..\external\jpeg\jdct.h"/><ClInclude Include="..\..\..\external\jpeg\jchuff.h"/><ClInclude Include="..\..\..\external\jpeg\jdhuff.h"/><ClInclude Include="..\..\..\external\jpeg\jversion.h"/><ClInclude Include="..\..\..\external\jpeg\jconfig.h"/><ClInclude Include="..\..\..\external\jpeg\jmorecfg.h"/><ClInclude Include="..\..\..\external\jpeg\jpeglib.h"/><ClInclude Include="..\..\..\external\jpeg\jmemsys.h"/><ClInclude Include="..\..\..\external\jpeg\jpegint.h"/><ClInclude Include="..\..\..\external\jpeg\jinclude.h"/></ItemGroup><ItemGroup><ClCompile Include="..\..\..\external\jpeg\jidctflt.c"/><ClCompile Include="..\..\..\external\jpeg\jfdctfst.c"/><ClCompile Include="..\..\..\external\jpeg\jccoefct.c"/><ClCompile Include="..\..\..\external\jpeg\jchuff.c"/><ClCompile Include="..\..\..\external\jpeg\jdmaster.c"/><ClCompile Include="..\..\..\external\jpeg\jerror.c"/><ClCompile Include="..\..\..\external\jpeg\jcapimin.c"/><ClCompile Include="..\..\..\external\jpeg\jidctint.c"/><ClCompile Include="..\..\..\external\jpeg\jfdctint.c"/><ClCompile Include="..\..\..\external\jpeg\jmemmgr.c"/><ClCompile Include="..\..\..\external\jpeg\jdhuff.c"/><ClCompile Include="..\..\..\external\jpeg\jidctred.c"/><ClCompile Include="..\..\..\external\jpeg\jcomapi.c"/><ClCompile Include="..\..\..\external\jpeg\jcprepct.c"/><ClCompile Include="..\..\..\external\jpeg\jcdctmgr.c"/><ClCompile Include="..\..\..\external\jpeg\jdatasrc.c"/><ClCompile Include="..\..\..\external\jpeg\jcsample.c"/><ClCompile Include="..\..\..\external\jpeg\jdpostct.c"/><ClCompile Include="..\..\..\external\jpeg\jccolor.c"/><ClCompile Include="..\..\..\external\jpeg\jcmainct.c"/><ClCompile Include="..\..\..\external\jpeg\jcparam.c"/><ClCompile Include="..\..\..\external\jpeg\jdatadst.c"/><ClCompile Include="..\..\..\external\jpeg\jcphuff.c"/><ClCompile Include="..\..\..\external\jpeg\jdmainct.c"/><ClCompile Include="..\..\..\external\jpeg\jcinit.c"/><ClCompile Include="..\..\..\external\jpeg\jdcolor.c"/><ClCompile Include="..\..\..\external\jpeg\jddctmgr.c"/><ClCompile Include="..\..\..\external\jpeg\jfdctflt.c"/><ClCompile Include="..\..\..\external\jpeg\jdinput.c"/><ClCompile Include="..\..\..\external\jpeg\jcmaster.c"/><ClCompile Include="..\..\..\external\jpeg\jcmarker.c"/><ClCompile Include="..\..\..\external\jpeg\jdcoefct.c"/><ClCompile Include="..\..\..\external\jpeg\jdmerge.c"/><ClCompile Include="..\..\..\external\jpeg\jutils.c"/><ClCompile Include="..\..\..\external\jpeg\jdmarker.c"/><ClCompile Include="..\..\..\external\jpeg\jdphuff.c"/><ClCompile Include="..\..\..\external\jpeg\jquant2.c"/><ClCompile Include="..\..\..\external\jpeg\jquant1.c"/><ClCompile Include="..\..\..\external\jpeg\jcapistd.c"/><ClCompile Include="..\..\..\external\jpeg\jdapistd.c"/><ClCompile Include="..\..\..\external\jpeg\jdapimin.c"/><ClCompile Include="..\..\..\external\jpeg\jmemnobs.c"/><ClCompile Include="..\..\..\external\jpeg\jidctfst.c"/><ClCompile Include="..\..\..\external\jpeg\jdsample.c"/></ItemGroup><Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/><ImportGroup Label="ExtensionTargets"/></Project>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-x86|Win32">
+      <Configuration>Debug-x86</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{334C3FD6-C611-4D9E-291B-140E47BDF5AB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>android_libjpeg</RootNamespace>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\..\..\external\jpeg\bin\;$(MSBuildProjectDirectory)\..\..\..\external\jpeg\bin\</ExecutablePath>
+    <IntDir>$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>OpenGL32.lib;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-x86|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>OpenGL32.lib;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_DEBUG;GR_DEBUG=1;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <Optimization>Full</Optimization>
+      <PreprocessorDefinitions>NDEBUG;SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_RELEASE;GR_RELEASE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+      <OutputFile>$(OutDir)lib\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>OpenGL32.lib;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;SK_CAN_USE_FLOAT;SK_BUILD_FOR_WIN32;SK_IGNORE_STDINT_DOT_H;_CRT_SECURE_NO_WARNINGS;SK_RELEASE;GR_RELEASE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\external\jpeg\libjpeg.gyp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\external\jpeg\jerror.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jdct.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jchuff.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jdhuff.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jversion.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jconfig.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jmorecfg.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jpeglib.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jmemsys.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jpegint.h" />
+    <ClInclude Include="..\..\..\external\jpeg\jinclude.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\external\jpeg\jidctflt.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jfdctfst.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jccoefct.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jchuff.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdmaster.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jerror.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcapimin.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jidctint.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jfdctint.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jmemmgr.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdhuff.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jidctred.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcomapi.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcprepct.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcdctmgr.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdatasrc.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcsample.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdpostct.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jccolor.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcmainct.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcparam.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdatadst.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcphuff.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdmainct.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcinit.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdcolor.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jddctmgr.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jfdctflt.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdinput.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcmaster.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcmarker.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdcoefct.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdmerge.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jutils.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdmarker.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdphuff.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jquant2.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jquant1.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jcapistd.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdapistd.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdapimin.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jmemnobs.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jidctfst.c" />
+    <ClCompile Include="..\..\..\external\jpeg\jdsample.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
