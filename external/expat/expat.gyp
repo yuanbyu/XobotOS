@@ -22,6 +22,15 @@
 	    'HAVE_EXPAT_CONFIG_H'
 	  ]
         }],
+        [ 'skia_os == "win"', {
+          'cflags': [
+          ],
+          'sources': [
+          ],
+	  'defines': [
+	    'COMPILED_FROM_DSP'
+	  ]
+        }],	
       ],
       'sources' : [
         'lib/xmlparse.c',
